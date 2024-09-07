@@ -65,9 +65,9 @@ double calculateWidth()
     //Calculates Width
     double width = sqrt(pow(x2-x1, 2) + pow(y2-y1,2));
     printf("Point #1 Entered: x1 =%.3lf", x1);
-    printf("; y1 =%lf\n", y1);
+    printf("; y1 =%.3lf\n", y1);
     printf("Point #2 Entered: x2 =%.3lf", x2);
-    printf("; y2 =%lf\n", y2);
+    printf("; y2 =%.3lf\n", y2);
     printf("The width of the city encompassed by your request is %.3lf\n", width);
     return 3;
 
@@ -90,19 +90,13 @@ double calculateHeight()
     double height = sqrt(pow(x2-x1, 2) + pow(y2-y1,2));
     printf("Point #1 Entered: x1 =%.3lf", x1);
     printf("; y1 =%.3lf\n", y1);
-    printf("Point #2 Entered: x2 =%lf", x2);
+    printf("Point #2 Entered: x2 =%.3lf", x2);
     printf("; y2 =%.3lf\n", y2);
     printf("The height of the city encompassed by your request is %.3lf\n", height);
     return 1;
 
 }
 
-
-
-// Can confirm as of 1am 9/7 that Distance is WORKING
-// 1:15, Perimeter is WORKING
-// 2:09pm Area is WORKING
-// 3:33pm Width is WORKING
 
 
 
