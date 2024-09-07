@@ -51,7 +51,24 @@ double calculateArea()
 
 double calculateWidth()
 {
+    // Asks for and stores x values
+    printf("Enter x1 and x2:\n");
+    double x1 = 1, x2 = 1;
+    scanf("%lf %lf", &x1, &x2);
+
+    // Asks for and stores y values
+    printf("Enter y1 and y2:\n");
+    double y1 = 1, y2 = 2;
+    scanf("%lf %lf", &y1, &y2);
     
+    //Calculates Width
+    double width = sqrt(pow(x2-x1, 2) + pow(y2-y1,2));
+    printf("Point #1 Entered: x1 =%lf", x1);
+    printf("; y1 =%lf\n", y1);
+    printf("Point #2 Entered: x2 =%lf", x2);
+    printf("; y2 =%lf\n", y2);
+    printf("The width of the city encompassed by your request is -whatever is computed %lf\n", width);
+    return 3;
 
 
 
@@ -73,6 +90,7 @@ int main(int argc, char **argv)
     calculateDistance();
     calculatePerimeter();
     calculateArea();
+    calculateWidth();
     return 0;
 
 }
