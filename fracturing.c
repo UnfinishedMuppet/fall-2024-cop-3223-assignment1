@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#define PI = 3.14159
 
 
 // Asks for 4 variables and uses the distance formula to calculate the distance. 
@@ -37,7 +38,7 @@ double calculatePerimeter()
 
     // Calculates Perimeter (x-h)^2 + (y-k)^2
     double radius = sqrt(pow(x1 - x2, 2) + pow(y1-y2,2));
-    double perimeter = 2 * PI * radius
+    double perimeter = 2 * PI * radius;
     printf("%lf",&perimeter);
     return perimeter;
 
@@ -54,7 +55,6 @@ double calculatePerimeter()
 
 int main()
 {
-    #define PI = 3.14159
     calculateDistance();
     calculatePerimeter();
     return 0;
